@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f8ff;
+            background: linear-gradient(to right, #ffecd2, #fcb69f);
+        }
+
+        .container {
+            text-align: center;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #ff6347;
+            margin-bottom: 1rem;
+        }
+
+        input[type="number"] {
+            width: 60%;
+            padding: 10px;
+            margin: 1rem 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff5ee;
+        }
+
+        input[type="button"] {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="button"]:hover {
+            background-color: #218838;
+        }
+
+        #textx {
+            margin-top: 1rem;
+            font-size: 1.2rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Guess The Number</h1>
+        <label id="textx" for="numbertxt"></label>
+        <input type="number" placeholder="Enter your guess" id="numbertxt">
+        <input type="button" value="Guess" id="button1">
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
